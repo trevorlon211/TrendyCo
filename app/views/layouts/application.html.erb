@@ -8,7 +8,21 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body>	
+  <nav>
+  	<ul>
+  		<li>Home</li>
+  		<li>About</li>
+  		<li>Contact</li>
+  		<li>Blog</li>
+  	</ul>
+  </nav>
+
     <%= yield %>
+
+    <footer>
+      &copy; 2016 TrendyCo
+     </footer>
+
   </body>
 </html>
