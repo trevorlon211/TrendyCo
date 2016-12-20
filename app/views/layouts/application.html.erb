@@ -2,21 +2,26 @@
 <html>
   <head>
     <title>TrendyCo</title>
-    <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <%= csrf_meta_tags %>
+
   </head>
 
   <body>	
-  <nav>
-  	<ul>
-  		<li>Home</li>
-  		<li>About</li>
-  		<li>Contact</li>
-  		<li>Blog</li>
-  	</ul>
-  </nav>
+  <header id="top_header" class="clearfix">
+    <div class="wrapper">
+      <h1 class="logo">Trendy<span>&amp;</span>Co</h1>
+      <a href="#" class="menu"><i class="fa fa-bars"></i></a>
+      <nav id="main_nav">
+        <a><%= link_to "About", static_pages_about_path %></a>
+        <a><%= link_to "Contact", static_pages_contact_path %></a>
+        <a><%= link_to "Blog", static_pages_about_path %></a>
+      </nav>
+    </div>
+  </header>
 
     <%= yield %>
 
