@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 		text-transform: uppercase;
 		font-size: 1.20em;
 		font-weight: 700;
+		letter-spacing: 0.05em;
 		span {
 			font-weight: 300;
 			color: $highlight;
@@ -89,6 +90,44 @@ h1, h2, h3, h4, h5, h6 {
 .menu {
 	display: none;
 }
+
+#main_footer {
+	padding: 2.5em 0;
+	text-align: center;
+	.logo {
+	   text-transform: uppercase;
+	   font-size: 1.15em;
+	   font-weight: 700;
+	   letter-spacing: 0.05em;
+	}
+
+	.logo span {
+	   font-weight: 300;
+	   color: $highlight;
+	}
+	.copyright{
+	    margin: 0;
+	    color: $secondary;
+	    font-size: .85em;
+	}
+	.links {
+	   display: inline;
+	   a {
+	      color: $secondary;
+	      font-size: .85em;
+	      text-decoration: none;
+	      margin: 0 .5em;
+	      &:hover {
+	         color: $highlight;
+	      }
+
+	   }
+	   
+	}
+}
+
+
+
 
 
 @media only screen and (max-width: 768px) {
