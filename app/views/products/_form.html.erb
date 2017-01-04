@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :category %>
+    <%= f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a category" }, input_html: { class: "dropdown-toggle" } %>
+  </div>
+  <div class="field">
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
@@ -24,6 +28,16 @@
   <div class="field">
     <%= f.label :image_url %>
     <%= f.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
   </div>
 
   <div class="actions">
