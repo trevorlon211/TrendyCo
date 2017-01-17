@@ -3,17 +3,7 @@
 <h1>Products</h1>
     <div class="container-fluid">
       <div class="row">
-        <% @products.each do |product| %>
-          <div class="col-sm-2 col-md-4">
-            <div class="product">
-              <div class="image_wrapper">
-                 <%= link_to image_tag(product.image_url), product, class:"img-responsive" %>
-              </div>
-              <h1><%= link_to product.name, product %></h1>
-              <strong><%= product.price %></strong>   
-            </div>        
-          </div>
-        <% end %>
+        <%= render @products %>
       </div>
     </div>
 <br>
