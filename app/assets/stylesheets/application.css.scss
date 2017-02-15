@@ -89,6 +89,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+#search-form {
+	display: inline;
+	padding-left: 1em;
+}
+
 .menu {
 	display: none;
 }
@@ -112,20 +117,6 @@ h1, h2, h3, h4, h5, h6 {
 	    color: $secondary;
 	    font-size: .85em;
 	}
-	.links {
-	   display: inline;
-	   a {
-	      color: $secondary;
-	      font-size: .85em;
-	      text-decoration: none;
-	      margin: 0 .5em;
-	      &:hover {
-	         color: $highlight;
-	      }
-
-	   }
-	   
-	}
 }
 
 
@@ -136,17 +127,6 @@ h1, h2, h3, h4, h5, h6 {
 	#main_nav {
 		display: none;
 	}
-
-	.menu {
-	   display: block;
-	   float: right;
-	   i {
-	   font-size: 1.5em;
-	   padding-top: .6em;
-	   color: black;
-	   }
-	 }
-	
 	#main_nav.active {
 		display: block;
 		width: 100%;
@@ -157,6 +137,15 @@ h1, h2, h3, h4, h5, h6 {
 			&:last-child {
 				border-bottom: none;
 			}
+		}
+	}
+	.menu {
+		display: block;
+		float: right;
+		i {
+			font-size: 1.5em;
+			color: black;
+			padding-top: .6em;
 		}
 	}
 }
