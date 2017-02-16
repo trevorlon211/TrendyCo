@@ -17,9 +17,9 @@
       <h1 class="logo">Trendy<span>&amp;</span>Co</h1>
       <a href="#" class="menu"><i class="fa fa-bars"></i></a>
       <nav id="main_nav">
-          <%= link_to "About", 'static_pages#about_path' %>
-          <%= link_to "Contact", 'static_pages#contact' %>
-          <%= link_to "Blog", 'static_pages#about' %>
+          <%= link_to "About", about_path %>
+          <%= link_to "Contact", contact_path %>
+          <%= link_to "Blog", about_path %>
           <%= form_tag("/products", method: "get", id: "search-form") do %>
             <%= text_field_tag :search, params[:q], placeholder: "Search" %>
           <% end %>
