@@ -18,7 +18,7 @@
       <a href="#" class="menu"><i class="fa fa-bars"></i></a>
       <nav id="main_nav">
           <%= link_to "About", static_pages_about_path %>
-          <%= link_to "Contact", static_pages_about_path %>
+          <%= link_to "Contact", static_pages_contact_path %>
           <%= link_to "Blog", static_pages_about_path %>
           <%= form_tag("/products", method: "get", id: "search-form") do %>
             <%= text_field_tag :search, params[:q], placeholder: "Search" %>
