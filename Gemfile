@@ -20,7 +20,7 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem "font-awesome-rails"
-
+gem 'mail_form', '~> 1.6'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

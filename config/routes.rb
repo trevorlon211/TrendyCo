@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
-  resources :products
-
+   resources :products
+   resources :contacts, only: [:new, :create]
+  
   root 'static_pages#landing_page'
-
   get 'static_pages/about'
-  get 'static_pages/contact'
 
-  post 'static_pages/thank_you'
 
   resources :orders, only: [:index, :show, :create, :destroy]
+   get '*path' => redirect('/')
 
 
 end
