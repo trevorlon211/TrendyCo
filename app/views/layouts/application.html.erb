@@ -23,6 +23,11 @@
           <%= form_tag("/products", method: "get", id: "search-form") do %>
             <%= text_field_tag :search, params[:q], placeholder: "Search" %>
           <% end %>
+          <% if user_signed_in? %> 
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+          <% else %>
+            <%= link_to('Login', new_user_session_path) %>
+          <% end %>
       </nav>
     </div>
   </header>
