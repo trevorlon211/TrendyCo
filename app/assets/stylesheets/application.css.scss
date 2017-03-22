@@ -53,8 +53,17 @@ html, body {
 
 .wrapper {
 	width: 90%;
+	margin: 0 auto;	
+}
+
+.skinny_wrapper {
+	width: 85%;
+	max-width: 760px;
 	margin: 0 auto;
-	
+}
+
+.wrapper_padding {
+	padding-top: 40px;
 }
 
 
@@ -99,15 +108,19 @@ h1, h2, h3, h4, h5, h6 {
 	height: 2.25em;
 }
 
-
-
+#page_title {
+	text-align: center;
+	font-size: 2.5rem;
+	border-bottom: 1px solid $border;
+	padding: 2em 0;
+}
 
 .menu {
 	display: none;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
-	width: 100%;
+	width: 80%;
 	max-width: 100%;
 	height: 3em;
 	border: 2px solid $border;
@@ -127,7 +140,7 @@ input[type="submit"], .button {
 	font-size: 1em;
 	color: $dark;
 	text-decoration: none;
-	padding: 1em 2em;
+	padding: 0.8em 1.5em;
 	&:hover {
 		border: 2px solid $highlight;
 		color: $highlight;
