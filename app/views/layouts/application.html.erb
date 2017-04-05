@@ -4,6 +4,7 @@
     <title>TrendyCo</title>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
@@ -14,9 +15,10 @@
   <body>	
   <header id="top_header" class="clearfix">
     <div class="wrapper">
-      <h1 class="logo">Trendy<span>&amp;</span>Co</h1>
+      <a href="/static_pages/landing_page"><h1 class="logo">Trendy<span>&amp;</span>Co</h1></a>
       <a href="#" class="menu"><i class="fa fa-bars"></i></a>
       <nav id="main_nav">
+          <%= link_to "Shop", products_path %>
           <%= link_to "About", static_pages_about_path %>
           <%= link_to "Contact", new_contact_path %>
           <%= link_to "Blog", static_pages_about_path %>

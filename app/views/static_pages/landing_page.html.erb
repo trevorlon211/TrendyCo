@@ -1,34 +1,70 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-<!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <% @products.each do |product| %>
-    <div class="item<%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url) %>
-      <div class="carousel-caption">
-        <%= link_to product.name, product %>
-      </div>
-        </div>
-    <% end %>
-
+<section id="banner" class="clearfix" >
+  <div id="banner_content_wrapper">
+    <div id="content">
+       <h2 class ="title">New Season Styles</h2>
+       <%= link_to 'Shop Now', products_path, :class => "btn btn-secondary" %>
+    </div>
   </div>
+</section>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<section id="feature" class="clearfix">
+    <div class="moment_wrapper">
+       <div class="moment_image">
+          <%= image_tag("guy.jpg") %>
+       </div>
+       <div class="moment_text">
+         <h2>PROM KING</h2>
+         <h4>Own your tux (and the dance floor)</h4>
+         <%= link_to 'Shop Now', products_path, :class => "btn btn-secondary" %>
+       </div>     
+    </div>
+    <div class="moment_wrapper">
+       <div class="moment_image">
+          <%= image_tag("girl.jpg") %>
+       </div>
+       <div class="moment_text">
+          <h2>After Party</h2>
+          <h4>Tiara-worthy looks for late-night style</h4>
+          <%= link_to 'Shop Now', products_path, :class => "btn btn-secondary" %>    
+       </div>     
+    </div>
+</section>
 
-
+<section id="style_blog" class="clearfix">
+   <h2 class="style_title">
+     STYLE FEED
+   </h2>
+   <div class="style_paragraph">
+     <p>Style. Grooming. Inspiration. Advice</p>
+   </div>
+   <div class="style_wrapper">
+     <div class="style_content">
+       <div class="style_image">
+         <%= image_tag("kerry.jpg") %>
+       </div>
+       <div class="moment_text">
+          <h4>After Party</h4>
+          <p>Tiara-worthy looks for late-night style</p>         
+       </div>  
+     </div>
+     <div class="style_content">
+       <div class="style_image">
+         <%= image_tag("keira.jpg") %>
+       </div>
+       <div class="moment_text">
+          <h4>After Party</h4>
+          <p>Tiara-worthy looks for late-night style</p>         
+       </div>  
+     </div> 
+     <div class="style_content">
+       <div class="style_image">
+         <%= image_tag("justin.jpg") %>
+       </div>
+       <div class="moment_text">
+          <h4>After Party</h4>
+          <p>Tiara-worthy looks for late-night style</p>         
+       </div>  
+     </div>       
+   </div>
+</section>
 

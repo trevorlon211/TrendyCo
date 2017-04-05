@@ -25,6 +25,7 @@ $white: #FFFFFF;
 $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #E9E9E9;
+$front: #efefe5;
 
 @mixin box-shadow {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
@@ -81,11 +82,13 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 1.20em;
 		font-weight: 700;
 		letter-spacing: 0.05em;
+		color: $dark;
 		span {
 			font-weight: 300;
 			color: $highlight;
 		}
 	}
+
 	#main_nav {
 		float: right;
 		font-size: 1em;
@@ -119,6 +122,103 @@ h1, h2, h3, h4, h5, h6 {
 	display: none;
 }
 
+#banner {
+    background-image: image-url("asos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 974px;
+    height: 556px;
+    max-width: 90%;
+    margin: 0 auto 50px auto;
+    position: relative;
+}
+
+#content {
+	top: 35%;
+	position: absolute;
+	padding-left: 74px;
+	h2 {
+	  color: $front;
+	  font-size: 50px;
+	  line-height: 64px;
+	  letter-spacing: 0;
+	  font-weight: bold;
+	}
+	.btn-secondary {
+	   background: $white;
+	   color: $dark;
+	   font-size: 16px;
+	   font-weight: bold;
+	   letter-spacing: 2px;
+	   line-height: 22px;
+       padding: 9px 18px;
+       border: 2px solid $dark;
+       transition-duration: 0.4s;
+	}
+	.btn-secondary:hover {
+		background-color: $dark;
+	    color: white;
+	 }
+}
+
+#feature {
+	width: 974px;
+	position: relative;
+	margin: 0 auto 50px auto;
+		.moment_wrapper {
+		  width: 460px;
+		  float: left;
+		  display: block;
+		  margin: 0 13px;
+		  box-sizing: border-box;
+		  text-align: center;	      
+	}	
+	.btn-secondary {
+	   background: $white;
+	   color: $dark;
+	   font-size: 16px;
+	   font-weight: bold;
+	   letter-spacing: 2px;
+	   line-height: 22px;
+       padding: 8px 16px;
+       border: 2px solid $dark;
+       transition-duration: 0.4s;
+	}
+	.btn-secondary:hover {
+		background-color: $dark;
+	    color: white;
+	 }
+}
+
+#style_blog {
+    margin: 0 auto 50px auto;
+    width: 974px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.07);
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+    height: 574px;
+     h2.style_title {
+      text-align: center;
+      font-weight: 700;
+	  letter-spacing: 2px;
+	  line-height: 35px;
+	  color: $dark;
+	  height: 30px;
+	  font-size: 26px;
+    }
+
+    .style_content {
+        float: left;
+	    margin: 0 auto 0 1.9%;
+	    box-sizing: border-box;
+        background: $white;
+        height: 443px;
+    }
+}
+
+
 input[type="text"], input[type="email"], input[type="password"], textarea {
 	width: 80%;
 	max-width: 100%;
@@ -146,6 +246,12 @@ input[type="submit"], .button {
 		color: $highlight;
 	}
 }
+
+label {
+	display: block;
+}
+
+
 
 #main_footer {
 	padding: 2.5em 0;
@@ -189,9 +295,114 @@ input[type="submit"], .button {
 		display: block;
 		float: right;
 		i {
-			font-size: 1.5em;
+			font-size: 1.1em;
 			color: $dark;
-			padding-top: .6em;
+			padding-top: 1.2em;
 		}
 	}
+	#top_header .logo {
+	   font-size: 1em;
+	}
+
+	#banner {
+	  background-image: image-url("asos.jpg");
+	  max-width: 90%;
+      height: 460px;
+	}
+	#content h2 {	    
+	    font-size: 32px;
+	    line-height: 44px;
+	}
+	#content .btn-secondary { 
+	    font-size: 12px;
+	    letter-spacing: 1px;
+	    line-height: 22px;
+	    padding: 6px 14px;
+	}
+	#feature {
+	  max-width: 90%;
+      height: 460px;
+		.moment_wrapper {
+		      
+	  }	
+	.btn-secondary {
+	   font-size: 12px;
+	    letter-spacing: 1px;
+	    line-height: 22px;
+	    padding: 6px 14px;
+	}
+	.btn-secondary:hover {
+		background-color: $dark;
+	    color: white;
+	 }
+}
+
+}
+
+
+@media only screen and (max-width: 575px) {
+    #top_header {
+	    padding: 1.1em 0;
+	    border-bottom: shadow;
+	}
+    #main_nav {
+		display: none;
+	}
+	#main_nav.active {
+		display: block;
+		width: 100%;
+		a {
+			display: block;
+			padding: 0.8em 0;
+			border-bottom: 1px solid #E9E9E9;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	.menu {
+		display: block;
+		float: right;
+		i {
+			font-size: 1em;
+			color: $dark;
+			padding-top: 1.2em;
+		}
+	}
+	#top_header .logo {
+	   font-size: 1em;
+	}
+	#banner {
+	  background-image: image-url("asos.jpg");
+	  max-width: 90%;
+      height: 360px;
+	}
+	#content h2 {	    
+	    font-size: 24px;
+	    line-height: 34px;
+	}
+	#content .btn-secondary { 
+	    font-size: 12px;
+	    letter-spacing: 1px;
+	    line-height: 22px;
+	    padding: 6px 14px;
+	}
+
+	#feature {
+	  max-width: 90%;
+      height: 460px;
+		.moment_wrapper {
+		      
+	  }	
+	.btn-secondary {
+	   font-size: 12px;
+	    letter-spacing: 1px;
+	    line-height: 22px;
+	    padding: 6px 14px;
+	}
+	.btn-secondary:hover {
+		background-color: $dark;
+	    color: white;
+	 }
+ }
 }
