@@ -208,6 +208,15 @@ h1, h2, h3, h4, h5, h6 {
 	  height: 30px;
 	  font-size: 26px;
     }
+     p.style_paragraph {
+       text-align: center;
+       font-size: 18px;
+       letter-spacing: 0.5px;
+       line-height: 27px;
+       margin-bottom: 20px;
+       padding: 2px 0;
+     }
+
 
     .style_content {
         float: left;
@@ -215,7 +224,21 @@ h1, h2, h3, h4, h5, h6 {
 	    box-sizing: border-box;
         background: $white;
         height: 443px;
+        position: relative;
     }
+    .moment_text {
+        padding: 13px 11px;
+     }
+    .date {
+        float: right;
+        margin-right: 10px;
+        color: $dark;
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+     }
 }
 
 
