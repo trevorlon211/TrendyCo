@@ -1,21 +1,22 @@
 <p id="notice"><%= notice %></p>
+
 <section id="core-product">
   <div class="image-content">
-      <%= image_tag(@product.image_url, class: "img-responsive") %>
+      <%= image_tag(@product.image_url, class: "img-thumbnail") %>
   </div>
   <div class="text-content">
-     <p>
-      Product: <%= @product.name %>
-     </p>
-     <p>
+     <h2 class="product_name">
+      <%= @product.name %>
+    </h2>
+     <h3 class="product_price">
+      $<%= @product.price %>
+    </h3>
+     <p class="product_description">
       <%= @product.description %>
      </p>
-     <p>
-      <%= @product.price %>
-     </p>
-     <p>
-      <%= @product.color %>
-     </p>
+     <h3 class="product_color">
+      Color: <%= @product.color %>
+    </h3>
   </div>
 </section>
 
