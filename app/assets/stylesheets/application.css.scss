@@ -13,12 +13,12 @@
  *= require_tree .
  *= require_self
  */
- 
+
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
- 
+
 
 $dark: #424652;
 $white: #FFFFFF;
@@ -54,7 +54,7 @@ html, body {
 
 .wrapper {
 	width: 90%;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .skinny_wrapper {
@@ -171,8 +171,8 @@ h1, h2, h3, h4, h5, h6 {
 		  display: block;
 		  margin: 0 13px;
 		  box-sizing: border-box;
-		  text-align: center;	      
-	}	
+		  text-align: center;
+	}
 	.btn-secondary {
 	   background: $white;
 	   color: $dark;
@@ -239,6 +239,23 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 5px;
         right: 10px;
      }
+}
+
+#core-product {
+  width: 100%;
+  float: left;
+  display: block;
+  .image-content {
+    width: 66%;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+  }
+  .text-content {
+    width: 34%;
+    float: left;
+    box-sizing: border-box;
+  }
 }
 
 
@@ -332,11 +349,11 @@ label {
 	  max-width: 90%;
       height: 460px;
 	}
-	#content h2 {	    
+	#content h2 {
 	    font-size: 32px;
 	    line-height: 44px;
 	}
-	#content .btn-secondary { 
+	#content .btn-secondary {
 	    font-size: 12px;
 	    letter-spacing: 1px;
 	    line-height: 22px;
@@ -346,8 +363,8 @@ label {
 	  max-width: 90%;
       height: 460px;
 		.moment_wrapper {
-		      
-	  }	
+
+	  }
 	.btn-secondary {
 	   font-size: 12px;
 	    letter-spacing: 1px;
@@ -400,11 +417,11 @@ label {
 	  max-width: 90%;
       height: 360px;
 	}
-	#content h2 {	    
+	#content h2 {
 	    font-size: 24px;
 	    line-height: 34px;
 	}
-	#content .btn-secondary { 
+	#content .btn-secondary {
 	    font-size: 12px;
 	    letter-spacing: 1px;
 	    line-height: 22px;
@@ -415,8 +432,8 @@ label {
 	  max-width: 90%;
       height: 460px;
 		.moment_wrapper {
-		      
-	  }	
+
+	  }
 	.btn-secondary {
 	   font-size: 12px;
 	    letter-spacing: 1px;

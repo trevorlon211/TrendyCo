@@ -1,27 +1,24 @@
 <p id="notice"><%= notice %></p>
-<div class="container-fluid">
-  <div class="row">
-   <div class="col-sm-2 col-md-4">
-     <p>
+<section id="core-product">
+  <div class="image-content">
       <%= image_tag(@product.image_url, class: "img-responsive") %>
-     </p>
+  </div>
+  <div class="text-content">
      <p>
-      <%= @product.name %>
+      Product: <%= @product.name %>
      </p>
      <p>
       <%= @product.description %>
      </p>
      <p>
-      <%= @product.color %>
-     </p>
-     <p>
       <%= @product.price %>
      </p>
-   </div>
+     <p>
+      <%= @product.color %>
+     </p>
   </div>
-</div>
+</section>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %>
-
