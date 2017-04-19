@@ -7,21 +7,22 @@
   <div class="text-content">
      <h2 class="product_name">
       <%= @product.name %>
-    </h2>
+     </h2>
      <h3 class="product_price">
       $<%= @product.price %>
-    </h3>
-    <h3 class="product_color">
-      Color: <%= @product.color %>
-    </h3>
-    <p class="product_description">
-     <%= @product.description %>
-    </p>
-    <p>
-      <%= select_tag 'product.size', options_for_select(['XS','S','M','L','XL']) %>
-    </p>
-
-  </div>
+     </h3>
+     <h3 class="product_color">
+      COLOR: <%= @product.color %>
+     </h3>
+     <div class="product_size">
+      <h3 class="product_color">SIZE:</h3>
+      <p><%= select_tag 'product.size', options_for_select(['XS','S','M','L','XL']),
+         {include_blank: 'Please Select'} %></p>
+     </div>
+     <div class="product_description">
+       <p><%= @product.description %></p>
+     </div>
+   </div>
 </section>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
