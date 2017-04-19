@@ -11,12 +11,16 @@
      <h3 class="product_price">
       $<%= @product.price %>
     </h3>
-     <p class="product_description">
-      <%= @product.description %>
-     </p>
-     <h3 class="product_color">
+    <h3 class="product_color">
       Color: <%= @product.color %>
     </h3>
+    <p class="product_description">
+     <%= @product.description %>
+    </p>
+    <p>
+      <%= select_tag 'product.size', options_for_select(['XS','S','M','L','XL']) %>
+    </p>
+
   </div>
 </section>
 

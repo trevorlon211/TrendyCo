@@ -7,4 +7,5 @@ class Product < ApplicationRecord
 		comments.rating_desc.first
 	end
 
+
 end
