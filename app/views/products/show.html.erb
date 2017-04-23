@@ -2,7 +2,7 @@
 
 <section id="core-product">
   <div class="image-content">
-      <%= image_tag(@product.image_url, class: "img-thumbnail") %>
+    <%= image_tag(@product.image_url, class: "img-thumbnail") %>
   </div>
   <div class="text-content">
      <h2 class="product_name">
@@ -15,6 +15,8 @@
        <h3>COLOR:</h3>
        <p><%= @product.color %></p>
      </div>
+     <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>">
+     </div></p>
      <div class="product_size">
       <h3 class="product_size">SIZE:</h3>
       <p><%= select_tag 'product.size', options_for_select(['XS','S','M','L','XL']),
@@ -23,6 +25,12 @@
      <div class="product_description">
        <p><%= @product.description %></p>
      </div>
+   </div>
+   <div class="comment-form">
+     <%= render 'new_comment' %>
+   </div>
+   <div class="wrapper_padding">
+     <%= render 'comment' %>
    </div>
 </section>
 
