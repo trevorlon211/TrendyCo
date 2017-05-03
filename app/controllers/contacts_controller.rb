@@ -13,4 +13,10 @@ class ContactsController < ApplicationController
       render :new
     end
   end
+
+  def welcome(user)
+    @appname = "TrendyCo"
+    mail( :to => user.email,
+          :subject => "Welcome to #{@appname}!")
+  end
 end

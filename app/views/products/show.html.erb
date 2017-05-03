@@ -32,6 +32,9 @@
    <div class="wrapper_padding">
      <%= render 'comment' %>
    </div>
+   <div class="wrapper_padding">
+     <%= will_paginate @comments %>
+   </div>
 </section>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
